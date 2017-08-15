@@ -76,5 +76,8 @@ public class ForecastFragment extends Fragment {
 
     private void refresh() {
         Log.i("Refresh", "refreshing...");
+
+        FetchWeatherTask task = new FetchWeatherTask();
+        task.execute("12303");
     }
 }
